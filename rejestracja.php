@@ -60,7 +60,7 @@ if($_SESSION['admin']>0)
 
     //recaptcha jezeli nie dziala to  extension=php_openssl.dll w php.ini
 
-    $sekret="6LeJZ50UAAAAALBeyrGexsWs1lfrT_ttaqgE26_W";
+    $sekret="ENTER YOUR SECRET CODE HERE";
     $sprawdz=file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
 
     $odpowiedz=json_decode($sprawdz);
